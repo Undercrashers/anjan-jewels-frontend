@@ -1,10 +1,9 @@
 "use client"; // This directive marks the component as a Client Component
 
 import React from 'react';
-import type { NextPage } from 'next';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ComingSoonPage: NextPage = () => {
+const ComingSoonPage = () => {
   // State to manage the loading screen
   const [loading, setLoading] = React.useState(true);
 

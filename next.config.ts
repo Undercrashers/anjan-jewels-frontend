@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   // Fix workspace root detection
   outputFileTracingRoot: process.cwd(),
   
+  // Output configuration - remove for Vercel deployment
+  // output: 'standalone',
+  
   // Enable experimental features for better performance
   experimental: {
     // optimizeCss: true, // Disabled as it requires critters package
@@ -20,6 +23,20 @@ const nextConfig: NextConfig = {
   // Performance optimizations
   poweredByHeader: false,
   compress: true,
+  
+  // Ensure trailing slash behavior is consistent
+  trailingSlash: false,
+  
+  // Redirects for common 404 scenarios
+  async redirects() {
+    return [
+      {
+        source: '/pages/:path*',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
   
   // Security headers
   async headers() {
