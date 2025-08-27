@@ -39,10 +39,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Anjan Jewels - Luxury Anti-Tarnish Silver Jewelry",
-  description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish silver jewelry collection featuring exquisite designs and unmatched quality.",
-  keywords: "silver jewelry, anti-tarnish, luxury jewelry, anjan jewels, premium silver, jewelry collection",
+  title: "Anjan Jewels - Luxury Anti-Tarnish Jewelry",
+  description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection featuring exquisite designs and unmatched quality.",
+  keywords: "jewelry, anti-tarnish, luxury jewelry, anjan jewels, premium jewelry, jewelry collection",
   authors: [{ name: "Anjan Jewels" }],
+  icons: {
+    icon: '/favicon.ico',
+  },
   robots: {
     index: true,
     follow: true,
@@ -55,16 +58,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Anjan Jewels - Luxury Anti-Tarnish Silver Jewelry",
-    description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish silver jewelry collection.",
+    title: "Anjan Jewels - Luxury Anti-Tarnish Jewelry",
+    description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection.",
     type: "website",
     locale: "en_US",
     siteName: "Anjan Jewels",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anjan Jewels - Luxury Anti-Tarnish Silver Jewelry",
-    description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish silver jewelry collection.",
+    title: "Anjan Jewels - Luxury Anti-Tarnish Jewelry",
+    description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection.",
   },
   verification: {
     google: "your-google-verification-code",

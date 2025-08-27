@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const ComingSoonPage = () => {
   // State to manage the loading screen
@@ -98,11 +99,30 @@ const ComingSoonPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 4.5 }}
             >
+              {/* Logo */}
+              <motion.div
+                className="mb-6 flex justify-center md:justify-start"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 4.2 }}
+              >
+                <div className="w-32 h-32 rounded-full overflow-hidden bg-white/10 backdrop-blur-sm border-2 border-white/20 shadow-2xl p-2">
+                  <Image
+                    src="/ka_jewels-1.png"
+                    alt="KA Jewels Logo"
+                    width={120}
+                    height={120}
+                    className="object-contain w-full h-full rounded-full"
+                    priority
+                  />
+                </div>
+              </motion.div>
+              
               <h1 className="text-6xl md:text-8xl font-bold text-gray-100 tracking-wider">
                 Anjan Jewels
               </h1>
               <p className="mt-4 text-lg md:text-xl text-gray-300 font-poppins max-w-md">
-                Timeless elegance, redefined. Discover our exquisite collection of anti-tarnish silver jewelry.
+                Timeless elegance, redefined. Discover our exquisite collection of anti-tarnish jewelry.
               </p>
             </motion.div>
 
