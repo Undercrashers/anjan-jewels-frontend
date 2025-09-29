@@ -31,20 +31,22 @@ const poppins = Poppins({
 });
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: '#000000',
+  themeColor: "#000000",
 };
 
 export const metadata: Metadata = {
   title: "Anjan Jewels - Luxury Anti-Tarnish Jewelry",
-  description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection featuring exquisite designs and unmatched quality.",
-  keywords: "jewelry, anti-tarnish, luxury jewelry, anjan jewels, premium jewelry, jewelry collection",
+  description:
+    "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection featuring exquisite designs and unmatched quality.",
+  keywords:
+    "jewelry, anti-tarnish, luxury jewelry, anjan jewels, premium jewelry, jewelry collection",
   authors: [{ name: "Anjan Jewels" }],
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
   robots: {
     index: true,
@@ -52,14 +54,15 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   openGraph: {
     title: "Anjan Jewels - Luxury Anti-Tarnish Jewelry",
-    description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection.",
+    description:
+      "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection.",
     type: "website",
     locale: "en_US",
     siteName: "Anjan Jewels",
@@ -67,7 +70,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Anjan Jewels - Luxury Anti-Tarnish Jewelry",
-    description: "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection.",
+    description:
+      "Discover timeless elegance with Anjan Jewels. Premium anti-tarnish jewelry collection.",
   },
   verification: {
     google: "your-google-verification-code",
@@ -84,10 +88,14 @@ export default function RootLayout({
       <head>
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} ${poppins.variable} antialiased bg-black text-white min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bodoniModa.variable} ${poppins.variable} antialiased bg-gray-50 text-gray-900 min-h-screen`}
         suppressHydrationWarning={true}
       >
         {children}
